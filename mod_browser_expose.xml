@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Browser Expose! Module</name>
+	<author>Emmanuel Fontan</author>
+	<authorEmail>fontanemmanuel@gmail.com</authorEmail>
+	<authorUrl>www.el-golem.com.ar</authorUrl>
+	<creationDate>6 de Agosto de 2010</creationDate>
+	<copyright>2010 Emmanuel Fontan</copyright>
+	<license>GNU General Public License v3.0 - http://www.gnu.org/licenses/
+	</license>
+	<version>1.0</version>
+
+	<description>
+		Browser Expose! Module detect the user's Web Browser and
+		Operative System and shows an icon of the browser and O.S.
+	</description>
+
+	<languages>
+		<language tag="es-ES">es-ES.mod_browser_expose.ini</language>
+		<language tag="en-GB">en-GB.mod_browser_expose.ini</language>
+	</languages>
+
+	<files>
+		<filename module="mod_browser_expose">mod_browser_expose.php</filename>
+		<filename>helper.php</filename>
+		<filename>LICENSE.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+		<folder>images/</folder>
+	</files>
+
+	<params>
+		<param name="size" type="radio" default="16" label="Icon's Size"
+			description="Choose the icon's size">
+			<option value="16">16x16</option>
+			<option value="24">24x24</option>
+		</param>
+	</params>
+</install>
